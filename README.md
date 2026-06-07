@@ -34,12 +34,12 @@ Good options: Formspree, Basin, Getform, MailerLite, ConvertKit, Mailchimp, Butt
 
 ## Covers
 
-Replace placeholder cover files with final art, keeping these paths:
+Replace cover files with final art, keeping these paths:
 
 ```txt
-assets/covers/why-we-braved.png
-assets/covers/where-we-began.jpg
-assets/covers/book-two.jpg
+assets/covers/his-golden-heart/book-1.jpg
+assets/covers/his-golden-heart/book-2.jpg
+assets/covers/his-golden-heart/book-3.png
 ```
 
 ## GitHub Pages

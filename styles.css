@@ -246,6 +246,14 @@ h3 { font-size: 1.5rem; }
 
 #books .section-heading h2 { font-size: clamp(2.8rem, 6vw, 5rem); }
 
+.series-heading {
+  margin: 0.35rem 0 0;
+  color: var(--gold);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.35rem, 3vw, 2.15rem);
+  font-weight: 700;
+}
+
 .book-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -262,11 +270,46 @@ h3 { font-size: 1.5rem; }
 
 .book-card .cover-frame { margin-bottom: 1.1rem; }
 
-.series-label { color: var(--gold); font-size: 0.84rem; font-weight: 900; }
+.series-label { margin: 0 0 0.25rem; color: var(--gold); font-size: 0.84rem; font-weight: 900; }
+
+.book-card h3 { margin-bottom: 1rem; }
 
 .book-card p { color: var(--muted); }
 
 .book-blurb p { margin: 0 0 0.85rem; }
+
+.book-blurb.is-collapsed {
+  position: relative;
+  max-height: 10.5rem;
+  overflow: hidden;
+}
+
+.book-blurb.is-collapsed::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3.5rem;
+  background: linear-gradient(rgba(255, 253, 249, 0), rgba(255, 253, 249, 0.98));
+}
+
+.blurb-toggle {
+  align-self: flex-start;
+  margin: 0.25rem 0 1rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--gold);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.blurb-toggle:hover,
+.blurb-toggle:focus-visible { color: var(--charcoal); }
 
 .book-links { margin-top: auto; display: flex; flex-wrap: wrap; gap: 0.55rem; }
 .book-links .button { min-height: 40px; padding: 0.62rem 0.85rem; font-size: 0.9rem; }

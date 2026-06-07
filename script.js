@@ -2,7 +2,7 @@ const books = [
   {
     title: "Where We Began",
     series: "Book One",
-    cover: "assets/covers/where-we-began.jpg",
+    cover: "assets/covers/his-golden-heart/book-1.jpg",
     blurb: [
       "Julian Reid understands the laws of physics. But there is no scientific formula for the free-fall of a first crush.",
       "Chronically anxious and thousands of miles from his tight-knit family, Julian's first semester at college in Atlanta is supposed to be about focusing on his coursework and embracing this thrilling new chapter in his life alongside Theron and Anya, the two people who quickly become his closest friends.",
@@ -19,7 +19,7 @@ const books = [
   {
     title: "What We Built",
     series: "Book Two",
-    cover: "assets/covers/book-two.jpg",
+    cover: "assets/covers/his-golden-heart/book-2.jpg",
     blurb: [
       "Julian Reid said yes.",
       "Yes to Cas. Yes to falling, properly this time, into the kind of love he was never raised to expect. Kissing the billionaire was the easy part—now, Julian actually has to figure out how to date him.",
@@ -36,7 +36,7 @@ const books = [
   {
     title: "Why We Braved",
     series: "Book Three",
-    cover: "assets/covers/why-we-braved.png",
+    cover: "assets/covers/his-golden-heart/book-3.png",
     status: "Coming Soon",
     featured: true,
     blurb: [
@@ -92,7 +92,8 @@ function createBookCard(book) {
   title.textContent = book.title;
 
   const blurb = document.createElement("div");
-  blurb.className = "book-blurb";
+  blurb.className = "book-blurb is-collapsed";
+  blurb.id = `blurb-${book.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}`;
   const blurbParts = Array.isArray(book.blurb) ? book.blurb : [book.blurb];
   blurbParts.forEach((part) => {
     const paragraph = document.createElement("p");
@@ -124,7 +125,20 @@ function createBookCard(book) {
     links.append(anchor);
   });
 
-  card.append(coverFrame, series, title, blurb, links);
+  const toggle = document.createElement("button");
+  toggle.className = "blurb-toggle";
+  toggle.type = "button";
+  toggle.textContent = "Show More";
+  toggle.setAttribute("aria-expanded", "false");
+  toggle.setAttribute("aria-controls", blurb.id);
+  toggle.addEventListener("click", () => {
+    const isExpanded = toggle.getAttribute("aria-expanded") === "true";
+    toggle.setAttribute("aria-expanded", String(!isExpanded));
+    toggle.textContent = isExpanded ? "Show More" : "Show Less";
+    blurb.classList.toggle("is-collapsed", isExpanded);
+  });
+
+  card.append(series, title, coverFrame, blurb, toggle, links);
   return card;
 }
 
