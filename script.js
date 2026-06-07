@@ -3,7 +3,7 @@ const books = [
     title: "Where We Began",
     series: "His Golden Heart Series — Book One",
     cover: "assets/covers/where-we-began.jpg",
-    blurb: "Julian Reid understands the laws of physics. But there is no scientific formula for the free-fall of a first crush. It starts with a slip in the pouring rain, one fall, one catch, and suddenly Julian's world is thrown off its axis.",
+    blurb: "Julian Reid understands the laws of physics. But there is no scientific formula for the free-fall of a first crush. Chronically anxious and thousands of miles from his tight-knit family, Julian's first semester at college in Atlanta is supposed to be about coursework and a new chapter with Theron and Anya. He certainly didn't plan for Cas. It starts with a slip in the pouring rain, one fall, one catch, and suddenly Julian's world is thrown off its axis.",
     links: [
       { label: "Amazon", href: "https://www.amazon.com/Where-began-Golden-Heart-Book-ebook/dp/B0GWYJG9LJ", style: "button-primary" },
       { label: "Goodreads", href: "https://www.goodreads.com/author/show/70124219.Alicia_J_Veru", style: "button-secondary" },
@@ -14,7 +14,7 @@ const books = [
     title: "What We Built",
     series: "His Golden Heart Series — Book Two",
     cover: "assets/covers/book-two.jpg",
-    blurb: "Julian Reid said yes. Yes to Cas. Yes to falling, properly this time, into the kind of love he was never raised to expect. Kissing the billionaire was the easy part; now, Julian actually has to figure out how to date him.",
+    blurb: "Julian Reid said yes. Yes to Cas. Yes to falling, properly this time, into the kind of love he was never raised to expect. Kissing the billionaire was the easy part; now, Julian actually has to figure out how to date him. A grueling spring semester, Cas's bank account, imposter syndrome, and the parts of himself Julian has kept locked away all wait for him on the other side of saying yes.",
     links: [
       { label: "Amazon", href: "https://www.amazon.com/What-Built-Golden-Heart-Book-ebook/dp/B0H196WQ74", style: "button-primary" },
       { label: "Goodreads", href: "https://www.goodreads.com/author/show/70124219.Alicia_J_Veru", style: "button-secondary" },
@@ -27,9 +27,9 @@ const books = [
     cover: "assets/covers/why-we-braved.png",
     status: "Coming Soon",
     featured: true,
-    blurb: "Add the official blurb for Why We Braved here. This is the upcoming third book in the His Golden Heart Series.",
+    blurb: "Official blurb coming soon. Join Alicia's reader list for release updates, preorder news, and ARC opportunities for the third book in the His Golden Heart Series.",
     links: [
-      { label: "Notify Me When It’s Available", href: "#book-three-interest", style: "button-primary" },
+      { label: "Notify Me When It’s Available", href: "#newsletter", style: "button-primary" },
       { label: "Goodreads", href: "https://www.goodreads.com/author/show/70124219.Alicia_J_Veru", style: "button-secondary" }
     ]
   }
