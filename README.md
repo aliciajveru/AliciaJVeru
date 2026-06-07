@@ -1,6 +1,6 @@
 # Alicia J. Veru Author Website
 
-Static GitHub Pages site for Alicia J. Veru and the His Golden Heart Series.
+Static GitHub Pages site for Alicia J. Veru and His Golden Heart.
 
 ## Preview Locally
 
