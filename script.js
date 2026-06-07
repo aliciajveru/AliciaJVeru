@@ -64,6 +64,13 @@ function createBookCard(book) {
   const card = document.createElement("article");
   card.className = `book-card${book.featured ? " featured" : ""}`;
 
+  if (book.status) {
+    const badge = document.createElement("span");
+    badge.className = "badge book-status";
+    badge.textContent = book.status;
+    card.append(badge);
+  }
+
   const coverFrame = document.createElement("div");
   coverFrame.className = "cover-frame";
 
@@ -109,13 +116,6 @@ function createBookCard(book) {
 
   const links = document.createElement("div");
   links.className = "book-links";
-
-  if (book.status) {
-    const badge = document.createElement("span");
-    badge.className = "badge";
-    badge.textContent = book.status;
-    links.append(badge);
-  }
 
   book.links.forEach((link) => {
     const anchor = document.createElement("a");

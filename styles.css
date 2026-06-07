@@ -261,12 +261,21 @@ h3 { font-size: 1.5rem; }
 }
 
 .book-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 1rem;
 }
 
 .book-card.featured { outline: 2px solid rgba(184, 137, 59, 0.42); }
+
+.book-status {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+  box-shadow: 0 10px 20px rgba(80, 50, 38, 0.16);
+}
 
 .book-card .cover-frame { margin-bottom: 1.1rem; }
 
