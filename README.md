@@ -23,14 +23,13 @@ Recommended simple setup:
 3. Replace the placeholder `action` URLs in `index.html`.
 4. View counts and submissions in that provider dashboard.
 
-Search for these placeholders in `index.html`:
+The newsletter form is currently connected to Buttondown:
 
 ```txt
-YOUR_NEWSLETTER_FORM_ID
-YOUR_WHY_WE_BRAVED_FORM_ID
+https://buttondown.com/aliciajveru
 ```
 
-Good options: Formspree, Basin, Getform, MailerLite, ConvertKit, Mailchimp, Buttondown, Substack, Google Forms, Airtable.
+Buttondown signups are submitted through `https://buttondown.email/api/emails/embed-subscribe/aliciajveru`.
 
 ## Covers
 
