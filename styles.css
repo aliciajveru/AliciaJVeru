@@ -244,6 +244,8 @@ h3 { font-size: 1.5rem; }
 
 .section-heading p:not(.eyebrow) { color: var(--muted); font-size: 1.08rem; }
 
+#books .section-heading h2 { font-size: clamp(2.8rem, 6vw, 5rem); }
+
 .book-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -263,6 +265,8 @@ h3 { font-size: 1.5rem; }
 .series-label { color: var(--gold); font-size: 0.84rem; font-weight: 900; }
 
 .book-card p { color: var(--muted); }
+
+.book-blurb p { margin: 0 0 0.85rem; }
 
 .book-links { margin-top: auto; display: flex; flex-wrap: wrap; gap: 0.55rem; }
 .book-links .button { min-height: 40px; padding: 0.62rem 0.85rem; font-size: 0.9rem; }
